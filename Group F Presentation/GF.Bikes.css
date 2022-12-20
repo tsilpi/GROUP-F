@@ -1,0 +1,168 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+.backg-foto {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/images\ \(31\).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    margin: auto 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-footer {
+    background-color: #333;
+    padding-bottom: 55px;
+    display: block;
+    
+}
+
+nav {
+    display: block;
+    height: 80px;
+    line-height: 25px;
+    background-color: #333;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    /* float: right; */
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.info1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after {
+    content: '' ;
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 2s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+}
+
+.navbar1 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+
+.navbar1 h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.navbar1 h2 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 10px 2.5px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 2px  solid #262b2a;
+    background: transparent;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#btn-search {
+    height: 25px;
+}
+
+#btn {
+    height: 25px;
+    margin: 0 auto;
+}
+
+span {
+    background: #dae0df;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+li{
+    position: relative;
+    cursor: pointer;
+}
+.four{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgb(128, 128, 128, 0.2);
+    display: none;
+}
+
+li:hover .four{
+    display: block;
+}
+
+
